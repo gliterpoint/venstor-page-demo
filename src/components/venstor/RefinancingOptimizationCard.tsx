@@ -13,7 +13,7 @@ const RefinancingOptimizationCard = ({
         <h3 className="text-base font-bold leading-full">{title}</h3>
       </div>
       <div className="p-4 border-t border-[#cecece] flex flex-col gap-2.5">
-        <h3 className="text-center text-4xl leading-full font-roboto text-[#38A323] font-bold">
+        <h3 className="text-center text-2xl sm:text-4xl leading-full font-roboto text-[#38A323] font-bold">
           {value}
         </h3>
         {/* <div className=" flex items-center justify-between gap-4"> */}

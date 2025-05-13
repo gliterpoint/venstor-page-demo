@@ -10,12 +10,13 @@ import HeroCard from "../HeroCard";
 const PotentialSummarySection = () => {
   return (
     <>
-      <div className="grid grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div className=" w-full">
           <CustomLineChart
             data={dataLineChart}
             isLegend={false}
             yAxis={false}
+            left={12}
           />
         </div>
         <div className="w-full">
@@ -23,11 +24,12 @@ const PotentialSummarySection = () => {
             data={dataLineChart}
             isLegend={false}
             yAxis={false}
+            left={12}
           />
         </div>
       </div>
-      <div className="flex items-center justify-center">
-        <div className="flex flex-col gap-4 font-roboto items-center justify-center">
+      <div className="flex md:items-center md:justify-center">
+        <div className="flex flex-col gap-4 font-roboto md:items-center md:justify-center">
           <div className="flex flex-row items-center gap-4">
             <div className="flex-none">
               <LegendIconRed />
@@ -54,7 +56,7 @@ const PotentialSummarySection = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-7 max-w-4xl mx-auto w-full">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-7 max-w-4xl mx-auto w-full">
         <HeroCard
           bgColor="#E6F6FD"
           heading="Appréciation naturel"

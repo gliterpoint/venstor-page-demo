@@ -29,7 +29,9 @@ const InvestmentStrategy = ({
                   {item.label}
                 </p>
               </div>
-              <p className="text-primary text-sm font-bold">{item.value}</p>
+              <p className="text-primary text-sm font-bold text-right">
+                {item.value}
+              </p>
             </div>
           ))}
         </div>

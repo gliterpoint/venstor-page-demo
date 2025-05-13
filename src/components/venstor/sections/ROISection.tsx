@@ -9,15 +9,15 @@ import {
 
 const ROISection = () => {
   return (
-    <div className="grid grid-cols-12 gap-6 pt-12 pb-6">
+    <div className="lg:grid lg:grid-cols-12 gap-6 sm:pt-12 sm:pb-6">
       <div className="col-span-7">
-        <div className="h-96 w-full">
+        <div className="lg:h-96 w-full">
           <CustomLineChart data={dataLineChart} />
         </div>
       </div>
       <div className="col-span-5">
-        <div className="flex flex-col font-roboto">
-          <div className="py-4">
+        <div className="flex flex-col gap-4 sm:gap-0 font-roboto">
+          <div className="mt-6 sm:mt-0 sm:py-4">
             <Heading text={"Rendement sur mise de fonds"} />
           </div>
           <div className="flex flex-col gap-4">
@@ -34,7 +34,7 @@ const ROISection = () => {
               RSMDF = Rendement sur Mise de Fonds (cash on cash)
             </p>
           </div>
-          <div className="flex flex-col gap-4 font-roboto mt-6">
+          <div className="flex flex-col gap-4 font-roboto sm:mt-6">
             <div className="flex flex-row items-center gap-4">
               <div className="flex-none">
                 <LegendIconBlue />

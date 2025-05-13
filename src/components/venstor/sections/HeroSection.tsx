@@ -4,22 +4,22 @@ import HeroCard from "../HeroCard";
 
 const HeroSection = () => {
   return (
-    <div className="grid grid-cols-[1fr_1fr] lg:grid-cols-[520px_1fr] gap-6 font-plus-jakarta-sans items-start">
+    <div className="grid grid-cols-2 lg:grid-cols-[520px_1fr] gap-4 md:gap-6 font-plus-jakarta-sans items-start">
       {/* Left Side  */}
-      <div className="flex flex-col gap-7">
-        <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 md:gap-7 col-span-2 lg:col-auto order-2 lg:order-1">
+        <div className="flex flex-col gap-2 md:gap-4">
           <Heading text={"Property Overview"} />
-          <div className="flex flex-row gap-4 max-w-64">
+          <div className="flex flex-row gap-2.5 md:gap-4 lg:max-w-64">
             <div className="flex-none">
               <LocationIcon />
             </div>
-            <p className="text-[#535353] font-normal">
+            <p className="text-[#535353] font-normal text-sm md:text-base">
               945 rue Notre Dame Est Montreal, H4K 8N8
             </p>
           </div>
         </div>
         {/* Hero Statistics Section */}
-        <div className="grid grid-cols-2 gap-7">
+        <div className="grid grid-cols-2 gap-4 md:gap-7">
           <HeroCard
             bgColor="#E3F5FF"
             heading="Prix"
@@ -62,8 +62,8 @@ const HeroSection = () => {
           />
         </div>
         {/* End Hero Statistics Section */}
-        <div className="border border-[#E6E6E6] py-6 px-4 rounded-xl">
-          <p className="text-2xl font-inter font-normal text-[#848484] leading-full">
+        <div className="border border-[#E6E6E6] px-4 py-4 md:py-6 md:px-4 rounded-lg sm:rounded-xl">
+          <p className="text-sm sm:text-2xl font-inter font-normal text-[#848484] leading-full">
             Note:{" "}
             <span className="text-[#1FB356] font-medium leading-full">A-</span>
           </p>
@@ -72,9 +72,9 @@ const HeroSection = () => {
       {/* End Left Side  */}
 
       {/* Right Side  */}
-      <div className="flex flex-col gap-6">
-        <div className="p-6">
-          <div className="rounded-2xl overflow-hidden shadow-hero">
+      <div className="flex flex-col gap-6 col-span-2 lg:col-auto order-1 lg:order-2">
+        <div className="md:p-6">
+          <div className="rounded-xl md:rounded-2xl overflow-hidden shadow-hero-mobile md:shadow-hero">
             <img src="/hero-img.jpg" alt="hero-img" className="w-full" />
           </div>
         </div>

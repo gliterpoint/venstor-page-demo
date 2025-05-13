@@ -5,13 +5,13 @@ import PieChartStats from "../PieChartStats";
 
 const PieChartSection = () => {
   return (
-    <div className="grid grid-cols-12 gap-6">
-      <div className="col-span-7">
-        <div className="flex flex-col gap-6 pl-6">
-          <div className="py-4">
+    <div className="lg:grid lg:grid-cols-12 lg:gap-6">
+      <div className="lg:col-span-7">
+        <div className="flex flex-col gap-4 md:gap-6 md:pl-6 py-4 md:py-0">
+          <div className="md:py-4">
             <Heading text={"Financement"} />
           </div>
-          <div className="grid grid-cols-[1fr_1px_1fr_1px_1fr] gap-6 font-plus-jakarta-sans">
+          <div className="grid grid-cols-[1fr_1px_1fr_1px_1fr] gap-2 sm:gap-6 font-plus-jakarta-sans">
             <PieChartStats value={"20%"} title={"Mise de fonds nécessaire"} />
             <div className="w-[1px] bg-[#CECECE]"></div>
             <PieChartStats value={"4.75%"} title={"Taux intérêt"} />
@@ -20,10 +20,10 @@ const PieChartSection = () => {
           </div>
         </div>
       </div>
-      <div className="col-span-5">
+      <div className="lg:col-span-5">
         <div className="pt-4">
           <Heading text={"Structure du financement"} />
-          <div className="h-80 pt-5">
+          <div className="lg:h-80 pt-5">
             <CustomPieChart data={dataPieChart} colors={COLORS} />
           </div>
         </div>

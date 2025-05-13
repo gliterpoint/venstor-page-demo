@@ -4,7 +4,7 @@ import SectionHeading from "../SectionHeading";
 
 const PropertyInformationalSection = () => {
   return (
-    <div className="py-10 flex flex-col gap-8">
+    <div className="md:py-10 flex flex-col gap-8">
       <div className="max-w-4xl mx-auto">
         <SectionHeading
           title={"Information sur la batisse (a venir)"}
@@ -13,7 +13,7 @@ const PropertyInformationalSection = () => {
       </div>
       <div className="grid grid-cols-12 gap-4">
         {[1, 2, 3].map((item) => (
-          <div key={item} className="col-span-4">
+          <div key={item} className="col-span-12 md:col-span-6 lg:col-span-4">
             <InvestmentStrategy
               title="Property Information 1"
               data={[
@@ -34,7 +34,7 @@ const PropertyInformationalSection = () => {
           </div>
         ))}
 
-        <div className="col-span-6 h-full">
+        <div className="col-span-12 md:col-span-6 h-full">
           <InvestmentStrategy
             title="Property Information 1"
             data={[
@@ -53,7 +53,7 @@ const PropertyInformationalSection = () => {
             ]}
           />
         </div>
-        <div className="col-span-6 h-full">
+        <div className="col-span-12 md:col-span-6 h-full">
           <div className="border border-[#CECECE] rounded-2xl overflow-hidden font-roboto">
             <div className="p-4">
               <h3 className="text-black-global text-base font-bold leading-full">

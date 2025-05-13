@@ -9,13 +9,13 @@ import {
 
 const CurrentMarketRentSection = () => {
   return (
-    <div className="grid grid-cols-12 gap-6 pt-12 pb-10">
-      <div className="col-span-7">
-        <div className="h-96 w-full">
+    <div className="lg:grid lg:grid-cols-12 gap-6 sm:pt-12 sm:pb-10">
+      <div className="lg:col-span-7">
+        <div className="lg:h-96 w-full">
           <CustomLineChart data={dataLineChart} />
         </div>
       </div>
-      <div className="col-span-5">
+      <div className="lg:col-span-5 pt-2 lg:pt-2">
         <div className="flex flex-col font-roboto">
           <div className="py-4">
             <Heading text={"Loyer actuel vs loyer du marché"} />

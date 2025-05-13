@@ -4,9 +4,11 @@ import InvestmentStrategy from "../InvestmentStrategy";
 const InvestmentStrategySection = () => {
   return (
     <div className="max-w-5xl mx-auto w-full">
-      <div className="grid grid-cols-[161px_1fr_1fr] gap-4">
+      <div className="grid md:grid-cols-[161px_1fr_1fr] gap-4">
         <div className="shadow-working bg-white p-4 rounded-2xl">
-          <img src="/illustration-4.png" alt="illustration-4" />
+          <div className="max-w-[129px] mx-auto">
+            <img src="/illustration-4.png" alt="illustration-4" />
+          </div>
         </div>
         <InvestmentStrategy
           title="Investment Strategy"
@@ -25,7 +27,7 @@ const InvestmentStrategySection = () => {
             },
           ]}
         />
-        <div className="p-4">
+        <div className="sm:p-4">
           <div className="flex flex-col gap-4">
             <Heading text="Why It Works" />
             <div className="flex flex-col gap-4">

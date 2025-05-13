@@ -5,7 +5,7 @@ const RefinancingOptimizationSection = ({ title }: { title: string }) => {
   return (
     <div className="flex flex-col gap-6">
       <Heading text={title} />
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <RefinancingOptimizationCard
           title={"SCHL"}
           value={"+ 100,000$"}

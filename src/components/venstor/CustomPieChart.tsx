@@ -31,7 +31,9 @@ const renderCustomLabel = ({
   const mx = cx + (outerRadius + 10) * cos;
   const my = cy + (outerRadius + 10) * sin;
 
-  const ex = mx + (cos >= 0 ? 1 : -1) * 80;
+  const screenOffset =
+    typeof window !== "undefined" && window.innerWidth < 768 ? 30 : 80;
+  const ex = mx + (cos >= 0 ? 1 : -1) * screenOffset;
   const ey = my;
 
   const textAnchor = cos >= 0 ? "start" : "end";
@@ -53,8 +55,8 @@ const renderCustomLabel = ({
         y={ey - 6}
         textAnchor={textAnchor}
         fill="#333"
-        fontSize={12}
-        className="font-inter text-[#000000B2]"
+        // fontSize={12}
+        className="font-inter text-[#000000B2] text-xs"
       >
         {name}
       </text>
@@ -64,8 +66,8 @@ const renderCustomLabel = ({
         y={ey + 12}
         textAnchor={textAnchor}
         fill={fill}
-        fontSize={12}
-        className="font-inter text-[#000000B2]"
+        // fontSize={12}
+        className="font-inter text-[#000000B2] text-xs"
       >
         {(percent * 100).toFixed(0)}%
       </text>
@@ -88,9 +90,9 @@ const CustomPieChart = ({
         <Pie
           dataKey="value"
           data={data}
-          cx="45%"
+          cx="50%"
           cy="50%"
-          outerRadius={110}
+          // outerRadius={110}
           labelLine={false}
           label={renderCustomLabel}
         >

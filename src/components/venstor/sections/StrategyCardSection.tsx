@@ -7,7 +7,7 @@ const StrategyCardSection = () => {
       <Heading
         text={"Stratégie : Augmenter la qualité de vie des locataires"}
       />
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <StrategyCard
           title={"Rénovation Cuisine"}
           icon={"/illustration-1.png"}

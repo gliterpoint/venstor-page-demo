@@ -21,8 +21,8 @@ const CustomBarChart = ({
   data: BarChartEntry[];
 }) => {
   return (
-    <div className="shadow-bargraph bg-white rounded-lg pt-6 pb-5 pr-4 flex flex-col gap-6">
-      <h3 className="text-2xl font-bold font-inter leading-full text-center">
+    <div className="shadow-bargraph bg-white rounded-lg pt-4 pb-3 sm:pt-6 sm:pb-5 pr-4 flex flex-col gap-6">
+      <h3 className="text-base sm:text-2xl font-bold font-inter leading-full text-center">
         {title}
       </h3>
       <ChartContainer config={chartConfig} className="h-48 w-full ">

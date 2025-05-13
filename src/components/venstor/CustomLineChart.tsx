@@ -156,10 +156,12 @@ const CustomLineChart = ({
   data,
   isLegend = true,
   yAxis = true,
+  left = 0,
 }: {
   data: LineChartDataPoint[];
   isLegend?: boolean;
   yAxis?: boolean;
+  left?: number;
 }) => {
   return (
     <>
@@ -168,7 +170,7 @@ const CustomLineChart = ({
           accessibilityLayer
           data={data}
           margin={{
-            left: 12,
+            left: left,
             right: 12,
           }}
         >
@@ -182,7 +184,15 @@ const CustomLineChart = ({
             <YAxis
               tickLine={false}
               axisLine={false}
-              className="font-inter text-sm leading-full"
+              width={40}
+              tickFormatter={(value) => {
+                if (value >= 1000)
+                  return (
+                    (value / 1000).toFixed(value % 1000 === 0 ? 0 : 1) + "K"
+                  );
+                return value;
+              }}
+              className="font-inter text-xs sm:text-sm leading-full"
             />
           )}
           <ChartTooltip

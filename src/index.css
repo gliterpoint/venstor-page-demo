@@ -15,6 +15,7 @@
   --font-inter: "Inter", sans-serif;
   --font-roboto: "Roboto", sans-serif;
   --shadow-hero: 0px 4px 23.3px 0px #00000066;
+  --shadow-hero-mobile: 0px 1.85px 10.78px 0px #00000066;
   --leading-full: 100%;
   --shadow-bargraph: 0px 0px 4px 0px #00000040;
   --shadow-working: 0px 0px 25px 0px #06b6d429;

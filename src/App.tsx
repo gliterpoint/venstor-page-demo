@@ -15,7 +15,7 @@ import PropertyInformationalSection from "./components/venstor/sections/Property
 
 function App() {
   return (
-    <div className="max-w-7xl p-3 ml-auto mr-auto py-24">
+    <div className="max-w-7xl p-3 ml-auto mr-auto py-10 sm:py-24">
       <div className="flex flex-col gap-6">
         {/* Hero Section  */}
         <HeroSection />
@@ -59,7 +59,7 @@ function App() {
           <CurrentMarketRentSection />
           {/* End Current Rent and Market Rent Section  */}
 
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-6 md:gap-10">
             {/* Card Section  */}
             <StrategyCardSection />
             {/* End Card Section  */}
@@ -74,7 +74,7 @@ function App() {
         {/* End Section Two  */}
 
         {/* Note Heading  */}
-        <div className="py-6">
+        <div className="sm:py-6">
           <p className="text-[#344054] text-lg leading-7 font-medium">
             *L’augmentation annuel des loyers est basées sur les précédentes
             grilles du T.A.L et celle de la CORPIQ
@@ -91,8 +91,8 @@ function App() {
           <BarGraphSection />
           {/* End Bar Chart Section  */}
 
-          <div className="flex flex-col gap-10">
-            <div className="text-center pt-6">
+          <div className="flex flex-col gap-6 sm:gap-10">
+            <div className="sm:text-center sm:pt-6">
               <Heading text="Stratégie : Conversion de garage en logement" />
             </div>
             <InvestmentStrategySection />
